@@ -1,0 +1,184 @@
+@font-face {
+    font-family: lakers;
+    src: url(./Nba\ Lakers/);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    background-color: #552583;
+}
+
+.header h1 {
+    font-family: lakers;
+    margin-bottom: 10px;
+    font-size: 3rem
+}
+
+.header {
+    background-color: #552583;
+    text-align: center;
+    color: aliceblue;
+    padding: 20px 0;
+}
+
+.header p {
+    font-size: 1.2rem;
+}
+
+header h1::selection {
+    background-color: #FDB927;
+    color: #552583;
+}
+
+header h2::selection {
+    background-color: #FDB927;
+    color: #552583;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+.footer {
+    background-color: #333;
+    color: #efeae4;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+#footer{
+    margin-top: 30px;
+}
+
+.box {
+    background-color: #FDB927;
+    padding: 40px;
+    width: 80%;
+    height: 70%;
+    font-size: 20px;
+    text-align: justify;
+    border-radius: 50px;
+    transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover {
+    padding: 50px;
+    box-shadow: 40px 60px 30px rgb(0, 0, 0);
+}
+
+.box p::selection {
+    background-color: #552583;
+    color: #FDB927;
+}
+
+.box h2::selection {
+    background-color: #552583;
+    color: #FDB927;
+}
+
+img {
+    margin: 20px;
+    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+img:hover {
+    width: 350px;
+}
+
+.parallax1 {
+    background-image: url(./img/fotokobe.1.png);
+    border-radius: 40px;
+    margin: 20px;
+    border: 4px solid #FDB927;
+}
+
+.parallax2 {
+    background-image: url(https://image.api.playstation.com/vulcan/ap/rnd/202307/2809/a9fe3100a67c5d90e6cc5d24ebab09b8305468493192deac.jpg);
+    border-radius: 40px;
+    margin: 20px;
+    border: 4px solid #FDB927;
+}
+
+.parallax3 {
+    background-image: url(https://i.redd.it/h4icwmx1wh851.png);
+    border-radius: 40px;
+    margin: 20px;
+    border: 4px solid #FDB927;
+}
+
+.parallax {
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    color: #FDB927;
+}
+
+label {
+    font-weight: bold;
+    display: flex;
+    margin: 10px 0 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    width: calc(100%);
+}
+
+#form {
+    background-color: #552583;
+    color: #FDB927;
+    border: 1px solid #FDB927;
+    border-radius: 30px;
+    font-size: 15px;
+    padding: 15px;
+    width: 150px;
+    cursor: pointer;
+    font-family: "Protest Strike", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    transition: 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+    margin: 10px;
+}
+
+#form:hover {
+    /* font-size: 20px; */
+    background-color: #FDB927;
+    color: #552583;
+    width: 400px;
+}
+
+@media (max-width: 420px) {
+    .box{
+        font-size: 10px;
+    }
+
+}
